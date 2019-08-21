@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-var BufferSize, WriteSize int = 1024, 1024
+var BufferSize, WriteSize int = 1024, 102400
 var buffering bool = false
 
 func help() {
@@ -48,7 +48,7 @@ func getopts(args []string) {
 }
 
 func filewrite() {
-	FILE_PATH := `/Users/e175769/os_ex/filewrite_go/a.txt`
+	FILE_PATH := `PATH/To/File`
 	file, err := os.Create(FILE_PATH)
 
 	if err != nil {
